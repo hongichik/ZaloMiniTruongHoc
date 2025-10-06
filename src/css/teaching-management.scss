@@ -1,0 +1,334 @@
+/* TeachingManagement styles */
+.teaching-management-page {
+  background-color: #f5f5f5;
+}
+
+/* Compact filter bar */
+.teaching-management-page .compact-filter-bar {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.teaching-management-page .filter-button {
+  transition: all 0.3s ease;
+}
+
+.teaching-management-page .filter-button.active {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.teaching-management-page .active-filters-summary {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-left: 3px solid #3b82f6;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+/* Filter modal styles */
+.teaching-management-page .filter-modal-section {
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.teaching-management-page .filter-modal-section:last-child {
+  border-bottom: none;
+}
+
+.teaching-management-page .data-source-info {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-radius: 8px;
+  padding: 12px;
+  border-left: 4px solid #3b82f6;
+}
+
+.teaching-management-page .schedule-item {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.teaching-management-page .schedule-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.teaching-management-page .schedule-item .subject-title {
+  color: #1e40af;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.teaching-management-page .schedule-item .teacher-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.teaching-management-page .schedule-item .schedule-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.teaching-management-page .action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.teaching-management-page .btn-substitute {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.teaching-management-page .btn-substitute:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  transform: translateY(-1px);
+}
+
+.teaching-management-page .btn-request-substitute {
+  background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.teaching-management-page .btn-request-substitute:hover {
+  background: linear-gradient(135deg, #4b5563 0%, #374151 100%);
+  transform: translateY(-1px);
+}
+
+.teaching-management-page .filter-section {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.teaching-management-page .filter-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.teaching-management-page .pagination-section {
+  background: white;
+  padding: 16px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.teaching-management-page .pagination-info {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  color: #6b7280;
+  background: #f3f4f6;
+  border-radius: 6px;
+}
+
+.teaching-management-page .loading-state,
+.teaching-management-page .empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 16px;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Modal styles */
+.teaching-management-page .modal-content {
+  padding: 16px;
+}
+
+.teaching-management-page .modal-text {
+  margin-bottom: 16px;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.teaching-management-page .modal-highlight {
+  font-weight: 600;
+  color: #1e40af;
+}
+
+/* Filter badges */
+.teaching-management-page .filter-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  gap: 4px;
+}
+
+.teaching-management-page .results-header {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.teaching-management-page .sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.teaching-management-page .view-toggle {
+  display: flex;
+  gap: 2px;
+  background: #f1f5f9;
+  padding: 2px;
+  border-radius: 6px;
+}
+
+/* Loading skeleton */
+.teaching-management-page .skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Improved badges */
+.teaching-management-page .info-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.teaching-management-page .info-badge.class {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.teaching-management-page .info-badge.session {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.teaching-management-page .info-badge.room {
+  background-color: #f3e8ff;
+  color: #7c3aed;
+}
+
+.teaching-management-page .info-badge.academic {
+  background-color: #fed7aa;
+  color: #c2410c;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .teaching-management-page .filter-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .teaching-management-page .schedule-item .schedule-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .teaching-management-page .action-buttons {
+    flex-direction: column;
+  }
+  
+  .teaching-management-page .pagination-section {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .teaching-management-page .results-header {
+    padding: 12px;
+  }
+
+  .teaching-management-page .sort-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .teaching-management-page .view-toggle {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .teaching-management-page .filter-badge {
+    font-size: 0.6875rem;
+    padding: 2px 6px;
+  }
+}
+
+/* Animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.teaching-management-page .schedule-item {
+  animation: slideInUp 0.3s ease-out;
+}
+
+.teaching-management-page .schedule-item:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+.teaching-management-page .schedule-item:nth-child(odd) {
+  animation-delay: 0.05s;
+}

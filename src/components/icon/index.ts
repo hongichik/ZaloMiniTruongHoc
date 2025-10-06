@@ -1,0 +1,1 @@
+export { default as LogoTruong } from './LogoTruong.tsx';
